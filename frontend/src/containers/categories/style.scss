@@ -1,0 +1,62 @@
+@import "../../style/constants.scss";
+
+.container {
+    .content {
+        & > div {
+            outline: none!important;
+        }
+    }
+}
+
+.horizontal-menu {
+    .menu-item-wrapper {
+        outline: none;
+    }
+    
+    .menu-item {
+        margin: 20px 50px;
+        width: 280px;
+        height: 200px;
+        white-space: normal;
+        background-color: #fafafa;
+        box-shadow: 0 0 20px -5px #a7a7a79e;
+        border-radius: $border-radius;
+        max-width: 55vw;
+        
+        .menu-content {
+            height: 160px;
+            overflow: hidden;
+        }
+
+        .menu-title {
+            font-size: 18px;
+            text-align: center;
+            font-family: IndieFlower;
+            margin: 10px;
+        }
+
+        .menu-link {
+            
+        }
+
+        .menu-description {
+            font-size: 14px;
+            text-align: justify;
+            padding: 0 10px;
+        }
+    }
+    
+    .scroll-menu-arrow {
+        padding: 10px;
+        cursor: pointer;
+
+        img {
+            width: 20px;
+            max-width: initial!important;
+        }
+
+        .arrow-prev {
+            transform: rotateZ(180deg);
+        }
+    }
+}
